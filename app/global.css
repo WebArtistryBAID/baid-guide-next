@@ -1,3 +1,12 @@
 @import 'tailwindcss';
 @import 'fumadocs-ui/css/solar.css';
 @import 'fumadocs-ui/css/preset.css';
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans.ttf') format('truetype');
+}
+
+.font-header {
+    font-family: 'Nunito Sans', sans-serif;
+}

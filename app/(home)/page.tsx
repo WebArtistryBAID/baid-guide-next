@@ -6,17 +6,11 @@ export default function HomePage() {
     return (
         <div className="w-screen overflow-x-hidden">
             <section
-                className="relative w-screen bg-cover bg-center"
+                className="relative w-screen bg-cover bg-center flex flex-col items-center"
                 style={{ backgroundImage: 'url(/img/home.webp)' }}>
-                <div
-                    className="absolute bottom-0 left-0 z-0 h-44 w-full bg-purple-900 sm:h-52 md:h-1/2 md:w-2/3 lg:w-1/2"/>
 
-                <div className="absolute bottom-0 left-0 z-10 h-44 w-full sm:h-52 md:h-1/2">
-                    <div style={{ maxWidth: '77rem' }} className="mx-auto h-full px-6">
-                        <div className="flex h-full items-start pt-10 sm:pt-12 md:pt-14">
-                            <h1 className="text-4xl text-white md:text-5xl">The BAID Survival Guide</h1>
-                        </div>
-                    </div>
+                <div className="bg-red-900 rounded-full absolute bottom-24 sm:bottom-48 inline-block p-5 mx-3 lg:p-8 lg:mx-5 text-white">
+                    <h1 className="text-2xl lg:text-3xl font-header font-bold">The BAID Survival Guide</h1>
                 </div>
 
                 <div className="h-[28rem] md:h-[40rem]"/>
@@ -27,17 +21,17 @@ export default function HomePage() {
                     <div
                         className="rounded-3xl bg-white px-5 py-10 shadow-lg md:px-8 md:py-12">
                         <Cards className="grid-cols-4">
-                            <Card icon={<FaFile/>} href="/docs/procedures/course-selection" title="办理各类手续">
-                                所有有关订购成绩单、选课、请假、开设社团等各类手续的办理流程。
+                            <Card icon={<FaCalendar/>} href="/docs/freshmen-timeline/overview"
+                                  title="欢迎新同学!">
+                                在国际部，时间过得比想象中快很多。掌握好节奏，你会发现，这一年远比想象中更充实。
                             </Card>
 
                             <Card icon={<FaSchool/>} href="/docs/college-application/overview" title="了解大学申请制">
                                 除了享受青葱岁月之外，作为学生，我们的每个阶段都有一个目标。到了国际部，我们需要做什么呢?
                             </Card>
 
-                            <Card icon={<FaCalendar/>} href="/docs/freshmen-timeline/overview"
-                                  title="为高中生活做好准备">
-                                在国际部，时间过得比想象中快很多。掌握好节奏，你会发现，这一年远比想象中更充实。
+                            <Card icon={<FaFile/>} href="/docs/procedures/course-selection" title="办理各类手续">
+                                所有有关订购成绩单、选课、请假、开设社团等各类手续的办理流程。
                             </Card>
 
                             <Card icon={<FaList/>} href="/docs/basic-information/overview" title="获取学校基本信息">
@@ -66,9 +60,9 @@ export default function HomePage() {
 
                     <div className="flex flex-col">
                         <Callout>
-                            <p className="mb-1">本文档只包含北京中学国际部高中项目的信息。高中项目包含九年级
-                                (1+3)、十年级、十一年级和十二年级。</p>
-                            <p className="mb-1">由于学生可能从九年级或十年级开始学习，北京中学国际部的年级划分与传统高中不同。本文档遵循以下划分:</p>
+                            <p className="mb-1">本文档只包含北京中学国际部的信息。本文并非为北中外籍人员子女学校 (International School of Beijing Academy) 编写。
+                                高中项目包含八年级 (1.5)、九年级 (0.5、1 + 3)、十年级、十一年级和十二年级。</p>
+                            <p className="mb-1">由于北京中学国际部招生方式多样，其年级划分与传统高中不同。本文档遵循以下划分:</p>
                             <ul className="list-disc list-inside">
                                 <li><strong>第一年</strong>指九年级起点或 1.5 项目学生的九年级，十年级起点或 0.5 项目学生的十年级。</li>
                                 <li><strong>第二年</strong>指九年级起点或 1.5 项目学生学生的十年级和十一年级，十年级起点或 0.5 项目学生的十一年级。
