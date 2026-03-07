@@ -9,8 +9,11 @@ export default function HomePage() {
                 className="relative w-screen bg-cover bg-center flex flex-col items-center"
                 style={{ backgroundImage: 'url(/img/home.webp)' }}>
 
-                <div className="bg-red-900 rounded-full absolute bottom-24 sm:bottom-48 inline-block p-5 mx-3 lg:p-8 lg:mx-5 text-white">
-                    <h1 className="text-2xl lg:text-3xl font-header font-bold">The BAID Survival Guide</h1>
+                <div className="absolute bottom-24 sm:bottom-48 text-center">
+                    <div className="bg-red-900 rounded-full inline-block p-5 mx-3 lg:p-8 lg:mx-5 mb-3 text-white">
+                        <h1 className="text-2xl lg:text-3xl font-header font-bold">The BAID Survival Guide</h1>
+                    </div>
+                    <p className="text-white">Updated for Spring 2026—welcoming new students!</p>
                 </div>
 
                 <div className="h-[28rem] md:h-[40rem]"/>
@@ -60,12 +63,16 @@ export default function HomePage() {
 
                     <div className="flex flex-col">
                         <Callout>
-                            <p className="mb-1">本文档只包含北京中学国际部的信息。本文并非为北中外籍人员子女学校 (International School of Beijing Academy) 编写。
+                            <p className="mb-1">本文档只包含北京中学国际部的信息。本文并非为北中外籍人员子女学校
+                                (International School of Beijing Academy) 编写。
                                 高中项目包含八年级 (1.5)、九年级 (0.5、1 + 3)、十年级、十一年级和十二年级。</p>
                             <p className="mb-1">由于北京中学国际部招生方式多样，其年级划分与传统高中不同。本文档遵循以下划分:</p>
                             <ul className="list-disc list-inside">
-                                <li><strong>第一年</strong>指九年级起点或 1.5 项目学生的九年级，十年级起点或 0.5 项目学生的十年级。</li>
-                                <li><strong>第二年</strong>指九年级起点或 1.5 项目学生学生的十年级和十一年级，十年级起点或 0.5 项目学生的十一年级。
+                                <li><strong>第一年</strong>指九年级起点或 1.5 项目学生的九年级，十年级起点或 0.5
+                                    项目学生的十年级。
+                                </li>
+                                <li><strong>第二年</strong>指九年级起点或 1.5 项目学生学生的十年级和十一年级，十年级起点或
+                                    0.5 项目学生的十一年级。
                                 </li>
                                 <li><strong>第三年</strong>指十二年级。</li>
                                 <li><strong>0.5 项目学生</strong>指从九年级第二学期入学的学生。</li>
